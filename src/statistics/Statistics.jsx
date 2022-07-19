@@ -1,7 +1,9 @@
-import styleStat from './Statistics.module.css'
+import styleStat from './Statistics.module.css';
 const randomColor = () => {
-	return '#' + (Math.random().toString(16) + '000000').substring(2,8).toUpperCase()
-}
+  return (
+    '#' + (Math.random().toString(16) + '000000').substring(2, 8).toUpperCase()
+  );
+};
 const Statistics = ({ title = 'Upload stats', stats }) => {
   return (
     <section className={styleStat.statistics}>
@@ -9,9 +11,15 @@ const Statistics = ({ title = 'Upload stats', stats }) => {
       <ul className={styleStat.stat}>
         {stats.map(({ id, label, percentage }) => {
           return (
-            <li className={styleStat.item} key={id} style={{backgroundColor: randomColor()}} >
+            <li
+              className={styleStat.item}
+              key={id}
+              style={{ backgroundColor: randomColor() }}
+            >
               <span className={styleStat.label}>{label}</span>
-              <span className={styleStat.percentage}>{percentage + ' ' + '%'}</span>
+              <span className={styleStat.percentage}>
+                {percentage + ' %'}
+              </span>
             </li>
           );
         })}
