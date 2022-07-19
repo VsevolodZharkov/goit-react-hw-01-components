@@ -1,0 +1,36 @@
+.list {
+	display: flex;
+	margin-bottom: 50px;
+}
+.item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 80px;
+	height: 100%;
+	margin-right: 15px;
+	list-style-type: none;
+}
+.item:last-child{
+	margin-right: 0;
+}
+.green {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: green;
+	margin-bottom: 10px;
+}
+.red {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: red;
+	margin-bottom: 10px;
+}
+.avatar {
+	margin-bottom: 10px;
+}
+.name {
+	font-size: 13px;
+}

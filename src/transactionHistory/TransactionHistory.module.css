@@ -1,0 +1,56 @@
+.table {
+	display: flex;
+	align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* .thead {
+	display: flex;
+} */
+.thead {
+	background-color: #557fce;
+}
+.theadd {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.Type {
+	width: 200px;
+	font-size: 18px;
+}
+.Amount {
+	width: 200px;
+	font-size: 18px;
+}
+.Currency {
+	width: 200px;
+	font-size: 18px;
+}
+.list {
+	display: flex;
+	align-items: center;
+	height: 40px;
+}
+.type {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	font-size: 18px;
+}
+.amount {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	font-size: 18px;
+}
+.currency {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	font-size: 18px;
+}
