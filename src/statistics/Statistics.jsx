@@ -5,7 +5,7 @@ const randomColor = () => {
     '#' + (Math.random().toString(16) + '000000').substring(2, 8).toUpperCase()
   );
 };
-const Statistics = ({ title = 'Upload stats', stats }) => {
+const Statistics = ({ title='Upload stats', stats }) => {
   return (
     <section className={styleStat.statistics}>
       <h2 className={styleStat.title}>{title}</h2>
