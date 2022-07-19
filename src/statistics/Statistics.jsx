@@ -19,4 +19,5 @@ const Statistics = ({ title = 'Upload stats', stats }) => {
     </section>
   );
 };
+// save
 export { Statistics };
