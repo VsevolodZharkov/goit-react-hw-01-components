@@ -3,6 +3,7 @@
 	align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+	width: 600px;
 }
 /* .thead {
 	display: flex;
@@ -12,9 +13,10 @@
 }
 .theadd {
 	display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+	width: 600px;
 }
 .Type {
 	width: 200px;
