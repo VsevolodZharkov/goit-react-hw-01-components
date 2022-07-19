@@ -1,4 +1,5 @@
 import styleStat from './Statistics.module.css';
+import PropTypes from 'prop-types';
 const randomColor = () => {
   return (
     '#' + (Math.random().toString(16) + '000000').substring(2, 8).toUpperCase()
@@ -27,5 +28,13 @@ const Statistics = ({ title = 'Upload stats', stats }) => {
     </section>
   );
 };
-// save
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf({
+		id: PropTypes.string,
+		label: PropTypes.string,
+		percentage: PropTypes.number,
+	})
+};
+
 export { Statistics };

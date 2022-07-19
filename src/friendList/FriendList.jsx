@@ -1,5 +1,5 @@
 import styleFriends from './FriendList.module.css';
-
+import PropTypes from 'prop-types';
 const FriendList = ({ friends }) => {
   return (
     <ul className={styleFriends.list}>
@@ -13,5 +13,10 @@ const FriendList = ({ friends }) => {
     </ul>
   );
 };
-
+FriendList.propTypes = {
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  isOnline: PropTypes.bool.isRequired,
+  id: PropTypes.string.isRequired,
+};
 export { FriendList };

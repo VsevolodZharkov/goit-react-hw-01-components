@@ -1,5 +1,5 @@
 import styleTrans from './TransactionHistory.module.css'
-
+import PropTypes from 'prop-types';
 const TransactionHistory = ({ transactions }) => {
   return (
     <table className={styleTrans.table}>
@@ -21,6 +21,16 @@ const TransactionHistory = ({ transactions }) => {
 			</tbody>
     </table>
   );
+};
+TransactionHistory.propTypes = {
+  transactions: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      id: PropTypes.string.isRequired,
+    })
+  ),
 };
 
 export { TransactionHistory };

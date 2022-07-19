@@ -7,7 +7,7 @@ import { Profile } from '../infUser/Profile';
 import { Statistics } from '../statistics/Statistics';
 import { FriendList } from '../friendList/FriendList';
 import { TransactionHistory } from '../transactionHistory/TransactionHistory';
-
+// import PropTypes from 'prop-types';
 export const App = () => {
   return (
     <div
