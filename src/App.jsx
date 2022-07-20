@@ -1,13 +1,13 @@
-import user from '../infUser/user';
-import stats from '../statistics/data';
-import friends from '../friendList/friends';
-import transactions from '../transactionHistory/transactions';
+import user from './fileJSON/user';
+import stats from './fileJSON/data';
+import friends from './fileJSON/friends';
+import transactions from './fileJSON/transactions';
 
-import { Profile } from '../infUser/Profile';
-import { Statistics } from '../statistics/Statistics';
-import { FriendList } from '../friendList/FriendList';
-import { TransactionHistory } from '../transactionHistory/TransactionHistory';
-// import PropTypes from 'prop-types';
+import { Profile } from './components/infUser/Profile';
+import { Statistics } from './components/statistics/Statistics';
+import { FriendList } from './components/friendList/FriendList';
+import { TransactionHistory } from './components/transactionHistory/TransactionHistory';
+
 export const App = () => {
   return (
     <div

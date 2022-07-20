@@ -1,4 +1,4 @@
-import styleTrans from './TransactionHistory.module.css'
+import styleTrans from '../../fileCSS/TransactionHistory.module.css'
 import PropTypes from 'prop-types';
 const TransactionHistory = ({ transactions }) => {
   return (

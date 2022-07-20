@@ -1,4 +1,4 @@
-import styleUser from './Profile.module.css';
+import styleUser from '../../fileCSS/Profile.module.css';
 import PropTypes from 'prop-types';
 const Profile = ({ username, tag, location, avatar, stats }) => {
   return (

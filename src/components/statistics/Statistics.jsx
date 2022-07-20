@@ -1,4 +1,4 @@
-import styleStat from './Statistics.module.css';
+import styleStat from '../../fileCSS/Statistics.module.css';
 import PropTypes from 'prop-types';
 const randomColor = () => {
   return (
