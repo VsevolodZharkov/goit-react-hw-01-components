@@ -5,10 +5,10 @@ const randomColor = () => {
     '#' + (Math.random().toString(16) + '000000').substring(2, 8).toUpperCase()
   );
 };
-const Statistics = ({ title='Upload stats', stats }) => {
+const Statistics = ({ title, stats }) => {
   return (
     <section className={styleStat.statistics}>
-      <h2 className={styleStat.title}>{title}</h2>
+      {title && <h2 className={styleStat.title}>{title}</h2>}
       <ul className={styleStat.stat}>
         {stats.map(({ id, label, percentage }) => {
           return (
